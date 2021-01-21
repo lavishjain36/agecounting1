@@ -17,7 +17,7 @@ https.get('https://coderbyte.com/api/challenges/json/age-counting', (resp) => {
     .map(data => data.replace(" age=",""))
     .map(data => parseInt(data))
     .filter(data => {
-     return (data >= 58);
+     return (data >= 50);
     }).length
     console.log(parsedData);
   })
@@ -25,6 +25,5 @@ https.get('https://coderbyte.com/api/challenges/json/age-counting', (resp) => {
     console.log("error", e)
   })
 
-  //console.log(resp);
 
 });
